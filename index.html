@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/g.ico" type="image/x-icon">
+    <title>God-Of-War Ragnarok Fan</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="img/logo1.png" alt="Logo" class="header_logo">
+
+        <span id="hamburguer" class="material-symbols-rounded">
+            menu
+        </span>
+
+        <nav id="itens_menu" class="header_nav">
+            <ul>
+                <li><a href="" target="_blank">Comprar</a></li>
+                <li><a href="" target="_blank">Análise</a></li>
+                <li><a href="" alt="Blizzard" target="_blank">Menu3</a></li>
+                <li><a href="" alt="Servidor BR" target="_blank">Menu</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="fundo_main">
+            <div class="maxWidth">
+                <div>
+                <a href="index2.html" target="_blank" class="botao">Galeria</a>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="div_footer">
+            <div><a href="" Alt="Facebook" target="_blank"><img src="img/facebook.png" alt="Icon By @Flaticon"></a>
+            </div>
+            <div><a href="" Alt="Instagram" target="_blank"> <img src="img/instagram.png" alt="Icon By @Flaticon"></a>
+            </div>
+            <div><a href="" Alt="Linkedin" target="_blank"><img src="img/linkedin.png" alt="Icon By @Flaticon"></a>
+            </div>
+            <div><a href="" target="_blank" Alt="Youtube"><img src="img/youtube.png" alt="Icon By @Flaticon"></a></div>
+        </div>
+        Simone Penido - {Elas na Tech 2023}
+    </footer>
+
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itens_menu = document.getElementById('itens_menu');
+
+
+        hamburguer.addEventListener('click', aparecer);
+
+
+        function aparecer() {
+            if (itens_menu.style.display == 'block') {
+                itens_menu.classList.remove('show');
+            } else {
+                itens_menu.classList.toggle('show');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
