@@ -1,20 +1,20 @@
-html{
+html {
     font-family: 'Cinzel', serif;
 }
 
-.header{
+.header {
     text-align: center;
     margin: auto;
     background-color: #010326;
     color: #3F83BF;
 }
 
-.header_logo{
+.header_logo {
     width: 13em;
     height: auto;
 }
 
-#hamburguer{
+#hamburguer {
     background-color: #291c1a;
     color: #fff;
     display: block;
@@ -24,7 +24,7 @@ html{
     font-size: 2em;
 }
 
-.header_nav{
+.header_nav {
     background-color: #010326;
     display: none;
 }
@@ -34,21 +34,20 @@ html{
 }
 
 
-ul{
+ul {
     margin: 0;
 }
 
-.header_nav ul{
+.header_nav ul {
     list-style-type: none;
     padding: 0;
     text-transform: uppercase;
     letter-spacing: .2em;
     font-size: 1em;
     font-family: 'Cinzel', serif;
-    color: black;
 }
 
-.header_nav a{
+.header_nav a {
     background-color: #291c1a;
     text-decoration: none;
     display: block;
@@ -57,108 +56,119 @@ ul{
     font-weight: 800;
 }
 
-.header_nav a:hover{
-    background-color: color-mix(in srgb, #0511F2, #fff 60%);
+.header_nav a:hover {
+    background-color: color-mix(in srgb, #291c1a, #fff 50%);
     color: #0D0D0D;
 }
 
-@media screen and (min-width: 48em){/*768px maior que*/
-    #hamburguer{
+@media screen and (min-width: 48em) {
+
+    /*768px maior que*/
+    #hamburguer {
         display: none;
     }
 
-    .header{
+    .header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: #010326;
     }
 
-    .header_logo{
+    .header_logo {
         margin-left: 2em;
     }
 
-    .header_nav{
+    .header_nav {
         display: block;
     }
 
-    .header_nav ul{
+    .header_nav ul {
         margin-right: 2em;
         font-size: .9em;
     }
 
-    .header_nav li{
+    .header_nav li {
         display: inline-block;
     }
 
-    .header_nav a{
+    .header_nav a {
         border-radius: 5px;
         background-color: #0511F2;
     }
 
-    .header_nav a:hover{
-        background-color: #010329;
+    .header_nav a:hover {
+        background-color: #6b4843;
         color: #ffffff;
-    }
-
-    .header{
-        text-align: center;
-        margin: auto;
-        background-color: #010326;
     }
 }
 
-.fundo_main{
+.fundo_main {
     background-image: url(img/fundo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 110vh;
-}
-
-.fundo_main div{
-    text-align: center;
-    margin: auto;
-}
-
-
-.maxWidth{
-    max-width: 90em;/*1440px*/
-    position: relative;
-}
-
-.botao{
-    display: inline-block;
-    margin-top: 14em;
-    padding: 1em 2em;
-    background-color: rgba(19, 8, 168, 0.651);
-    border-radius: 10px;
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 1.5rem;
-}
-
-.botao:hover{
-    color: #211715;
-    background-color: rgba(96, 190, 221, 0.199);
-    font-weight: 900;
-}
-
-footer{
-    background-color: #010326;
-    text-align: center;
-    color: #3F83BF;
-}
-
-.div_footer{
+    height: 100vh;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-.div_footer img{
-    width: 2.5rem;
-    padding: 1em .4em;
-    align-items: center;
+div.galeria a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #0511f263;
+    padding: .8em 1.6em;
+    font-size: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 5px;
+    letter-spacing: .1em;
+    font-family: 'Cinzel', serif;
+    color:#fff;
+}
+
+div.galeria a:hover {
+    color: #0511F2;
+    background-color: #61423dbb;
+    font-weight: 900;
+}
+
+footer {
+    background-color: #010326;
+    text-align: center;
+    color: #3F83BF;
+    padding: 1em;
+}
+
+.logos_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.tamanho {
+    width: 2.5em;
+    
+}
+
+.texto_footer {
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin: 0;
+    padding-top: .8rem;
+    font-style: italic;
+    font-weight: 800;
+}
+
+@media screen and (min-width: 48em) {
+    /*768px maior que */
+
+    .logos_footer {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5em;
+    }
+
 }

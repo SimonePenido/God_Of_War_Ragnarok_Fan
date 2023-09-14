@@ -1,0 +1,13 @@
+main{
+    background-color: #0d0d0d;
+}
+
+div.container-fluid{
+    padding: 0;
+}
+
+div.flex{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
